@@ -1,0 +1,21 @@
+[
+    {
+        "caption": "SublimeOnSaveBuild: Setting",
+        "command": "open_file",
+        "args": {"file": "${packages}/User/SublimeOnSaveBuild.sublime-settings"}
+    },
+    {
+        "caption": "SublimeOnSaveBuild: Enable",
+        "command": "sublime_on_save_build_toggle",
+        "args": {
+            "enable": true
+        }
+    },
+    {
+        "caption": "SublimeOnSaveBuild: Disable",
+        "command": "sublime_on_save_build_toggle",
+        "args": {
+            "enable": false
+        }
+    }
+]

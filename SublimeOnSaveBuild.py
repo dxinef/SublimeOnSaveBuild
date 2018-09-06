@@ -29,5 +29,11 @@ class SublimeOnSaveBuild(sublime_plugin.EventListener):
 
         view.window().run_command('build')
 
-        
-        
+
+
+class SublimeOnSaveBuildToggleCommand(sublime_plugin.TextCommand):
+    def run(self, view, enable=True):
+        setting_filename = "SublimeOnSaveBuild.sublime-settings"
+        settings = sublime.load_settings(setting_filename)
+        settings.set('build_on_save', enable)
+        sublime.save_settings(setting_filename)
